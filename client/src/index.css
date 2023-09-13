@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* tailwind.css */
+
+/* Custom style for completed step circle */
+.completed-step {
+	@apply text-black; 
+  }
+  
+  /* Custom style for active step circle */
+  .active-step {
+	@apply text-red-500;
+  }
+
+:root {
+	--yellow-0: #fcd116;
+	--yellow-100: #e3bc14;
+	--yellow-200: #caa712;
+	--yellow-300: #b0920f;
+	--yellow-400: #977d0d;
+	--yellow-500: #7e690b;
+	--yellow-600: #655409;
+	--yellow-700: #4c3f07;
+	--yellow-800: #322a04;
+	--yellow-900: #191502;
+	--dark-900: #121113;
+	--dark-800: #131313;
+	--dark-700: #000000b3;
+	--dark-600: #747474;
+	--dark-500: #00000029;
+	--dark-400: #d9d9d9;
+	--dark-300: #e3e3e3;
+	--dark-200: #00000014;
+	--dark-100: #00000012;
+
+	--searchbox-shadow: 0px 3px 24px #000000b3;
+	--buttonbox-shadow: 0px 1px 6px #000000b3;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Messina Sans', sans-serif;
+}
+
+@font-face {
+	font-family: 'Messina Sans';
+	src: url('./assets/font/MessinaSans-BlackItalic.eot');
+	src: local('Messina Sans Black Italic'), local('MessinaSans-BlackItalic'),
+		url('./assets/font/MessinaSans-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/font/MessinaSans-BlackItalic.woff2') format('woff2'),
+		url('./assets/font/MessinaSans-BlackItalic.woff') format('woff'),
+		url('./assets/font/MessinaSans-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Messina Sans';
+	src: url('MessinaSans-SemiBold.eot');
+	src: local('Messina Sans SemiBold'), local('MessinaSans-SemiBold'),
+		url('./assets/font/MessinaSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('./assets/font/MessinaSans-SemiBold.woff2') format('woff2'),
+		url('./assets/font/MessinaSans-SemiBold.woff') format('woff'),
+		url('./assets/font/MessinaSans-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Messina Sans';
+	src: url('./assets/font/MessinaSans-Black.eot');
+	src: local('Messina Sans Black'), local('MessinaSans-Black'),
+		url('./assets/font/MessinaSans-Black.eot?#iefix') format('embedded-opentype'),
+		url('./assets/font/MessinaSans-Black.woff2') format('woff2'),
+		url('./assets/font/MessinaSans-Black.woff') format('woff'),
+		url('./assets/font/MessinaSans-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Messina Sans';
+	src: url('./assets/font/MessinaSans-Bold.eot');
+	src: local('Messina Sans Bold'), local('MessinaSans-Bold'),
+		url('./assets/font/MessinaSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('./assets/font/MessinaSans-Bold.woff2') format('woff2'),
+		url('./assets/font/MessinaSans-Bold.woff') format('woff'),
+		url('./assets/font/MessinaSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Messina Sans';
+	src: url('./assets/font/MessinaSans-SemiBoldItalic.eot');
+	src: local('Messina Sans SemiBold Italic'), local('MessinaSans-SemiBoldItalic'),
+		url('./assets/font/MessinaSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/font/MessinaSans-SemiBoldItalic.woff2') format('woff2'),
+		url('./assets/font/MessinaSans-SemiBoldItalic.woff') format('woff'),
+		url('./assets/font/MessinaSans-SemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Messina Sans';
+	src: url('./assets/font/MessinaSans-Regular.eot');
+	src: local('Messina Sans Regular'), local('MessinaSans-Regular'),
+		url('./assets/font/MessinaSans-Regular.eot?#iefix') format('embedded-opentype'),
+		url('./assets/font/MessinaSans-Regular.woff2') format('woff2'),
+		url('./assets/font/MessinaSans-Regular.woff') format('woff'),
+		url('./assets/font/MessinaSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Messina Sans';
+	src: url('./assets/font/MessinaSans-LightItalic.eot');
+	src: local('Messina Sans Light Italic'), local('MessinaSans-LightItalic'),
+		url('./assets/font/MessinaSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/font/MessinaSans-LightItalic.woff2') format('woff2'),
+		url('./assets/font/MessinaSans-LightItalic.woff') format('woff'),
+		url('./assets/font/MessinaSans-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Messina Sans';
+	src: url('./assets/font/MessinaSans-BoldItalic.eot');
+	src: local('Messina Sans Bold Italic'), local('MessinaSans-BoldItalic'),
+		url('./assets/font/MessinaSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/font/MessinaSans-BoldItalic.woff2') format('woff2'),
+		url('./assets/font/MessinaSans-BoldItalic.woff') format('woff'),
+		url('./assets/font/MessinaSans-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Messina Sans';
+	src: url('./assets/font/MessinaSans-RegularItalic.eot');
+	src: local('Messina Sans Regular Italic'), local('MessinaSans-RegularItalic'),
+		url('./assets/font/MessinaSans-RegularItalic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/font/MessinaSans-RegularItalic.woff2') format('woff2'),
+		url('./assets/font/MessinaSans-RegularItalic.woff') format('woff'),
+		url('./assets/font/MessinaSans-RegularItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Messina Sans';
+	src: url('./assets/font/MessinaSans-Light.eot');
+	src: local('Messina Sans Light'), local('MessinaSans-Light'),
+		url('./assets/font/MessinaSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('./assets/font/MessinaSans-Light.woff2') format('woff2'),
+		url('./assets/font/MessinaSans-Light.woff') format('woff'),
+		url('./assets/font/MessinaSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+.no-select {
+	user-select: none;
+	pointer-events: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.no-select:focus {
+	outline: none;
+	border: none;
+}
+
+@layer base {
+	input[type='number']::-webkit-outer-spin-button,
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number'] {
+		-webkit-appearance: none;
+		margin: 0;
+		-moz-appearance: textfield !important;
+	}
+}

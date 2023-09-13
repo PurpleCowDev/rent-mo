@@ -1,0 +1,1 @@
+{"version":3,"file":"azureStorageConfig.js","sourceRoot":"","sources":["../../utils/azureStorageConfig.ts"],"names":[],"mappings":";;;;;AAAA,sDAAwD;AACxD,oDAA2B;AAE3B,gBAAM,CAAC,MAAM,EAAE,CAAA;AAQf,MAAM,gBAAgB,GAAG,OAAO,CAAC,GAAG,CAAC,+BAA+B,CAAC;AACrE,MAAM,iBAAiB,GAAG,gCAAiB,CAAC,oBAAoB,CAAC,gBAAgB,CAAC,CAAC;AAEnF,kBAAe,iBAAiB,CAAC"}
